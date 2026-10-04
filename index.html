@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Revision Hub">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
+<link rel="stylesheet" href="styles.css">
+<title>Revision Hub</title>
+</head>
+<body>
+<div id="app" class="app-shell">
+  <header class="topbar">
+    <div><div class="eyebrow">YEAR 13</div><h1>Revision Hub</h1></div>
+    <button id="quickAddBtn" class="icon-btn" aria-label="Add task">＋</button>
+  </header>
+  <main id="main"></main>
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <button data-route="home" class="nav-item active"><span>⌂</span><small>Today</small></button>
+    <button data-route="planner" class="nav-item"><span>☷</span><small>Planner</small></button>
+    <button data-route="progress" class="nav-item"><span>◔</span><small>Progress</small></button>
+    <button data-route="topics" class="nav-item"><span>▦</span><small>Topics</small></button>
+    <button data-route="more" class="nav-item"><span>•••</span><small>More</small></button>
+  </nav>
+</div>
+<div id="modalRoot"></div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
